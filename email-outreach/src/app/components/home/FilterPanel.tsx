@@ -8,12 +8,12 @@ interface FilterPanelProps {
 
 const FilterPanel: React.FC<FilterPanelProps> = ({ setFilter }) => {
   return (
-    <aside className="w-1/4">
+    <aside className="w-1/4 hidden md:block">
       <div className="mb-4">
         <input
           type="text"
           placeholder="Filter by Date"
-          className="border p-2 w-full"
+          className="border p-2 w-full text-sm font-normal"
           onChange={(e) => setFilter(e.target.value)}
         />
       </div>
@@ -21,7 +21,7 @@ const FilterPanel: React.FC<FilterPanelProps> = ({ setFilter }) => {
         <input
           type="text"
           placeholder="Filter by Company"
-          className="border p-2 w-full"
+          className="border p-2 w-full text-sm font-normal"
           onChange={(e) => setFilter(e.target.value)}
         />
       </div>
@@ -29,7 +29,7 @@ const FilterPanel: React.FC<FilterPanelProps> = ({ setFilter }) => {
         <input
           type="text"
           placeholder="Filter by Template"
-          className="border p-2 w-full"
+          className="border p-2 w-full text-sm font-normal"
           onChange={(e) => setFilter(e.target.value)}
         />
       </div>
